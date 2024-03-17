@@ -3,7 +3,7 @@
 These concepts form the foundation of JavaScript programming and are essential for developing complex and efficient web applications.
 
 ## Contents
-1. [JavaScript modules](#place-1)
+1. [JavaScript modules](#1-javaScript-modules)
 
 ### JavaScript modules
 JavaScript modules are a way to organize and reuse JavaScript code. Using modules can break up the code into smaller, manageable pieces, which can then be imported and used in other parts of an application as needed. 
