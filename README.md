@@ -14,4 +14,4 @@ This modular approach helps in maintaining a clean codebase, makes it easier to 
   CommonJS is another module system that was traditionally used in Node.js.
 - **Asynchronous Module Loading**: Modules can be loaded asynchronously using dynamic imports (import() function), which returns a promise. This is particularly useful for code-splitting and loading code on demand.
 
-[MDN doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+Reference: [MDN doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
