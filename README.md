@@ -5,6 +5,7 @@ These concepts form the foundation of JavaScript programming and are essential f
 ## Contents
 1. [JavaScript modules](#1-javaScript-modules)
 2. [Thread & Call Stack](#2-thread-&-call-stack)
+3. [Execution Context](#3-execution-context)
 
 ### JavaScript modules
 JavaScript modules are a way to organize and reuse JavaScript code. Using modules can break up the code into smaller, manageable pieces, which can then be imported and used in other parts of an application as needed. 
@@ -24,3 +25,22 @@ JavaScript is a single-threaded programming language, which means it has a singl
 - **Call Stack**: The Call Stack is a data structure that JavaScript uses to keep track of the functions that a script calls. It works on the principle of "last in, first out" (LIFO), which means the last function that gets called is the first to be executed and removed from the stack once its execution completes. [MDN doc](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack)
 
 Further Reference: [JavaScript Under The Hood [1] - Thread & Call Stack](https://youtu.be/-G9c4CMMUKc?list=PL3ZPTlHmN263q0ZcI9qyqYfUKvaLqbGTt)
+
+### Execution Context 
+The JavaScript execution context is a fundamental concept that is critical for understanding how JavaScript code is executed. At a high level, an execution context can be thought of as an environment or a scope in which JavaScript code is evaluated and executed. 
+
+- **Global Execution Context**: This is the default or base context in which code that is not inside any function is executed. There is only one global execution context in a JavaScript program, and it creates a global object (window in the browser, global in Node.js) and a this binding that points to that global object.
+- **Functional Execution Context**: Every time a function is invoked, a new execution context is created for that function. This context will have its own set of variables, and it will also have access to the variables of its parent contexts (the outer lexical environment). Each function call gets its own execution context, even if the same function is being called multiple times simultaneously.
+
+The creation of an Execution Context (GEC or FEC) happens in two phases:
+  1. Creation Phase: In this phase, the JavaScript engine scans the code to be executed. It sets up the memory space for variables and functions, which is known as "hoisting". Variables are initially set to undefined and functions are fully defined. The this keyword is also established.
+  2. Execution Phase: In this phase, the code is executed line by line. The variables are assigned their values as the code runs, and functions are executed when their calls are reached.
+
+What is Hoisting?
+Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope before the code has been executed. This means that variables and functions can be used before they are declared in the code. It's important to note that only the declarations are hoisted, not the initialization.
+
+```
+console.log(x); // undefined
+var x = 5;
+console.log(x); // 5
+```
