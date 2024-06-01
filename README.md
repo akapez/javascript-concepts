@@ -10,6 +10,7 @@ These concepts form the foundation of JavaScript programming and are essential f
 2. Thread & Call Stack
 3. Execution Context
 4. Fetch API (Callbacks, Promises, Thenable, and async/await)
+5. Memory Storage
 
 ### JavaScript modules
 JavaScript modules are a way to organize and reuse JavaScript code. Using modules can break up the code into smaller, manageable pieces, which can then be imported and used in other parts of an application as needed. 
@@ -51,7 +52,7 @@ console.log(x); // 5
 Further Reference: [JavaScript Under The Hood 2 - Execution Context](https://youtu.be/Fd9VaW0M7K4?list=PL3ZPTlHmN263q0ZcI9qyqYfUKvaLqbGTt)
 
 ### Fetch API (Callbacks, Promises, Thenable, and Async/Await)
-- **Fetch API**: The Fetch API is a modern interface that allows to make of network requests similar to XMLHttpRequest (XHR). It is more powerful and flexible, providing a more straightforward and cleaner way to make asynchronous requests.
+- **Fetch API**: The Fetch API is a modern interface that allows to make of network requests similar to XMLHttpRequest (XHR).
 
 ```
 fetch('https://api.example.com/data')
@@ -64,7 +65,25 @@ fetch('https://api.example.com/data')
 - **Thenables**: Objects that implement a then method. Promises are thenables, but not all thenables are promises.
 - **Async/Await**: Syntactic sugar for promises, making asynchronous code more readable and easier to write. It allows to use of async functions and the await keyword for better flow control.
 
-  Further Reference: 
-  - [Callback function: MDN](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
-  - [Asynchronous: MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
-  - [Fetching data from the server: MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data)
+Further Reference: [Callbacks, Promises, Async Await | JavaScript Fetch API Explained](https://youtu.be/VmQ6dHvnKIM?list=PL3ZPTlHmN263q0ZcI9qyqYfUKvaLqbGTt)
+
+### Memory Storage
+JavaScript automatically allocates memory when objects are created and frees it when they are not used anymore (garbage collection).
+
+##### Memory Life Cycle
+- **Allocation**: Memory is allocated when variables, objects, or data structures are created.
+- **Usage**: The allocated memory is used for operations like reading or writing to variables and objects.
+- **Release**: Memory is released when it is no longer needed. This is where garbage collection comes in.
+
+##### Primitive and Reference Data Types
+- **Primitive Data Types**: Primitive data types are the most basic data types in JavaScript. They are immutable, meaning their values cannot be changed once created. stored by value directly in the stack. (Number, String, Boolean, Undefined, Null, Symbol)
+- **Reference Data Types**: Reference data types, also known as objects, are more complex data structures. Unlike primitives, they are mutable, stored by reference in the heap. (Object, Array, Function)
+
+##### Stack and Heap
+| Aspect          | Stack                                       | Heap                                                |
+| --------------- | ------------------------------------------- | --------------------------------------------------- |
+| Storage         | Primitive values, function calls            | Objects, arrays, dynamic data                       |
+| Memory Size     | Fixed, limited                              | Dynamic, flexible                                   |
+| Access Speed    | Fast                                        | Slower                                              |
+| Management	    | Automatically managed by JavaScript engine  | Managed by JavaScript engine with garbage collection|
+| Allocation Type	| Static memory allocation                    | Dynamic memory allocation                           |
