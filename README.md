@@ -87,3 +87,5 @@ JavaScript automatically allocates memory when objects are created and frees it 
 | Access Speed    | Fast                                        | Slower                                              |
 | Management	    | Automatically managed by JavaScript engine  | Managed by JavaScript engine with garbage collection|
 | Allocation Type	| Static memory allocation                    | Dynamic memory allocation                           |
+
+Further Reference: [JavaScript Under The Hood 4 - Memory Storage](https://youtu.be/Hci9Bb4_fkA?list=PL3ZPTlHmN263q0ZcI9qyqYfUKvaLqbGTt)
