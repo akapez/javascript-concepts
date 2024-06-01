@@ -1,3 +1,6 @@
+![alt text](https://raw.githubusercontent.com/avishka964/javascript-concepts/main/JS.jpg)
+
+
 # JavaScript Concepts
 
 These concepts form the foundation of JavaScript programming and are essential for developing complex and efficient web applications.
