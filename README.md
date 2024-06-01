@@ -63,5 +63,5 @@ fetch('https://api.example.com/data')
 
   Further Reference: 
   - [Callback function: MDN](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
-  - [Asynchronous: MDN](https://developer.mozilla.org/en-US/docs/Glossary/Asynchronous)
+  - [Asynchronous: MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
   - [Fetching data from the server: MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data)
