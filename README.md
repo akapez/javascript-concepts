@@ -6,6 +6,7 @@ These concepts form the foundation of JavaScript programming and are essential f
 1. JavaScript modules
 2. Thread & Call Stack
 3. Execution Context
+4. Fetch API (Callbacks, Promises, Thenable, and async/await)
 
 ### JavaScript modules
 JavaScript modules are a way to organize and reuse JavaScript code. Using modules can break up the code into smaller, manageable pieces, which can then be imported and used in other parts of an application as needed. 
@@ -45,3 +46,22 @@ var x = 5;
 console.log(x); // 5
 ```
 Further Reference: [JavaScript Under The Hood 2 - Execution Context](https://youtu.be/Fd9VaW0M7K4?list=PL3ZPTlHmN263q0ZcI9qyqYfUKvaLqbGTt)
+
+### Fetch API (Callbacks, Promises, Thenable, and Async/Await)
+- **Fetch API**: The Fetch API is a modern interface that allows to make of network requests similar to XMLHttpRequest (XHR). It is more powerful and flexible, providing a more straightforward and cleaner way to make asynchronous requests.
+
+```
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+- **Callbacks**: Functions passed as arguments to other functions and invoked after a specific task is completed. Suitable for simple asynchronous operations but can lead to callback hell.
+- **Promises**: Objects representing the eventual completion or failure of asynchronous operations. They allow for chaining and better error handling.
+- **Thenables**: Objects that implement a then method. Promises are thenables, but not all thenables are promises.
+- **Async/Await**: Syntactic sugar for promises, making asynchronous code more readable and easier to write. It allows to use of async functions and the await keyword for better flow control.
+
+  Further Reference: 
+  - [Callback function: MDN](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
+  - [Asynchronous: MDN](https://developer.mozilla.org/en-US/docs/Glossary/Asynchronous)
+  - [Fetching data from the server: MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data)
