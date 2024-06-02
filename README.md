@@ -11,6 +11,7 @@ These concepts form the foundation of JavaScript programming and are essential f
 3. Execution Context
 4. Fetch API (Callbacks, Promises, Thenable, and async/await)
 5. Memory Storage
+6. JavaScript Engine
 
 ### JavaScript modules
 JavaScript modules are a way to organize and reuse JavaScript code. Using modules can break up the code into smaller, manageable pieces, which can then be imported and used in other parts of an application as needed. 
@@ -89,3 +90,24 @@ JavaScript automatically allocates memory when objects are created and frees it 
 | Allocation Type	| Static memory allocation                    | Dynamic memory allocation                           |
 
 Further Reference: [JavaScript Under The Hood 4 - Memory Storage](https://youtu.be/Hci9Bb4_fkA?list=PL3ZPTlHmN263q0ZcI9qyqYfUKvaLqbGTt)
+
+### Javascript Engine
+A JavaScript engine is a program or interpreter that executes JavaScript code. Each web browser has its own JavaScript engine to parse, compile, and execute JavaScript code.
+
+| Browser, Headless Browser, or Runtime          | Stack              |
+| ---------------------------------------------- | ------------------ |
+| Mozilla                                        | Spidermonkey       |
+| Chrome, Node.js, Deno                          | V8                 |
+| Safari                                         | JavaScriptCore*    |
+| IE	                                           | Chakra             |
+| Bun	                                           | JavaScriptCore     |
+| Edge**	                                       | Blink and V8       |
+
+##### Compilation vs. Interpretation in Programming Languages
+- **Compilation**: Compilation is the process of translating high-level source code into machine code (binary code) that a computer's processor can execute directly. (C, C++, GO, Rust)
+- **Interpretation**: Interpretation involves translating and executing high-level source code line-by-line or statement-by-statement at runtime. (Python, Ruby, PHP, Javascript)
+
+##### Just-In-Time (JIT) Compilation
+Many modern programming languages and engines, including JavaScript engines like V8, use a hybrid approach called Just-In-Time (JIT) compilation. JIT combines elements of both compilation and interpretation.
+
+Further Reference: [JavaScript Under The Hood 5 - JavaScript Engine Overview](https://youtu.be/oc6faXVc54E?list=PL3ZPTlHmN263q0ZcI9qyqYfUKvaLqbGTt)
