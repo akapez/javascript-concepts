@@ -6,12 +6,19 @@
 These concepts form the foundation of JavaScript programming and are essential for developing complex and efficient web applications.
 
 ## Contents
-1. JavaScript modules
-2. Thread & Call Stack
-3. Execution Context
-4. Fetch API (Callbacks, Promises, Thenable, and async/await)
-5. Memory Storage
-6. JavaScript Engine
+1. JavaScript DOM Manipulation
+2. JavaScript modules
+3. Thread & Call Stack
+4. Execution Context
+5. Fetch API (Callbacks, Promises, Thenable, and async/await)
+6. Memory Storage
+7. JavaScript Engine
+
+### JavaScript DOM Manipulation
+DOM manipulation allows developers to create interactive and dynamic web applications by modifying the structure, content, and style of web pages.
+
+What is the DOM?
+The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the structure of a document as a tree of nodes, where each node corresponds to a part of the document, such as an element, attribute, or text content. The DOM allows programming languages like JavaScript to access and manipulate the content, structure, and style of web pages dynamically.
 
 ### JavaScript modules
 JavaScript modules are a way to organize and reuse JavaScript code. Using modules can break up the code into smaller, manageable pieces, which can then be imported and used in other parts of an application as needed. 
