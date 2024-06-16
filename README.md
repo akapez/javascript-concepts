@@ -20,6 +20,8 @@ DOM manipulation allows developers to create interactive and dynamic web applica
 What is the DOM?
 The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the structure of a document as a tree of nodes, where each node corresponds to a part of the document, such as an element, attribute, or text content. The DOM allows programming languages like JavaScript to access and manipulate the content, structure, and style of web pages dynamically.
 
+Further Reference: [MDN doc](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
+
 ### JavaScript modules
 JavaScript modules are a way to organize and reuse JavaScript code. Using modules can break up the code into smaller, manageable pieces, which can then be imported and used in other parts of an application as needed. 
 This modular approach helps in maintaining a clean codebase, makes it easier to debug, and enhances code reusability.
