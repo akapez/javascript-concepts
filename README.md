@@ -103,7 +103,7 @@ Further Reference: [JavaScript Under The Hood 4 - Memory Storage](https://youtu.
 ### Javascript Engine
 A JavaScript engine is a program or interpreter that executes JavaScript code. Each web browser has its own JavaScript engine to parse, compile, and execute JavaScript code.
 
-| Browser, Headless Browser, or Runtime          | Stack              |
+| Browser, Headless Browser, or Runtime          | JavaScript Engine  |
 | ---------------------------------------------- | ------------------ |
 | Mozilla                                        | Spidermonkey       |
 | Chrome, Node.js, Deno                          | V8                 |
