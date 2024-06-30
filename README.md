@@ -31,7 +31,7 @@ This modular approach helps in maintaining a clean codebase, makes it easier to 
   CommonJS is another module system that was traditionally used in Node.js.
 - **Asynchronous Module Loading**: Modules can be loaded asynchronously using dynamic imports (import() function), which returns a promise. This is particularly useful for code-splitting and loading code on demand.
 
-Further Reference: [MDN doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+Further Reference: [JavaScript Modules Crash Course](https://youtu.be/KeBxopnhizw)
 
 ### Thread & Call Stack 
 JavaScript is a single-threaded programming language, which means it has a single Call Stack. This means that JavaScript can only execute one piece of code at a time.
@@ -45,7 +45,8 @@ Further Reference: [JavaScript Under The Hood 1 - Thread & Call Stack](https://y
 The JavaScript execution context is a fundamental concept that is critical for understanding how JavaScript code is executed. At a high level, an execution context can be thought of as an environment or a scope in which JavaScript code is evaluated and executed. 
 
 - **Global Execution Context**: This is the default or base context in which code that is not inside any function is executed. There is only one global execution context in a JavaScript program, and it creates a global object (window in the browser, global in Node.js) and a this binding that points to that global object.
-- **Functional Execution Context**: Every time a function is invoked, a new execution context is created for that function. This context will have its own set of variables, and it will also have access to the variables of its parent contexts (the outer lexical environment). Each function call gets its own execution context, even if the same function is being called multiple times simultaneously.
+- **Functional Execution Context**: Every time a function is invoked, a new execution context is created for that function. It is responsible for managing the execution of that specific function, including its variables, arguments, and the value of this. Each function call generates a new execution context that gets pushed onto the call stack.
+
 
 The creation of an Execution Context (GEC or FEC) happens in two phases:
   1. Creation Phase: In this phase, the JavaScript engine scans the code to be executed. It sets up the memory space for variables and functions, which is known as "hoisting". Variables are initially set to undefined and functions are fully defined. The this keyword is also established.
@@ -103,20 +104,20 @@ Further Reference: [JavaScript Under The Hood 4 - Memory Storage](https://youtu.
 ### Javascript Engine
 A JavaScript engine is a program or interpreter that executes JavaScript code. Each web browser has its own JavaScript engine to parse, compile, and execute JavaScript code.
 
-| Browser, Headless Browser, or Runtime          | JavaScript Engine  |
+| Browser or Runtime                             | JavaScript Engine  |
 | ---------------------------------------------- | ------------------ |
 | Mozilla                                        | Spidermonkey       |
 | Chrome, Node.js, Deno                          | V8                 |
 | Safari                                         | JavaScriptCore*    |
-| IE	                                           | Chakra             |
+| Edge	                                         | Chakra             |
 | Bun	                                           | JavaScriptCore     |
-| Edge**	                                       | Blink and V8       |
 
 ##### Compilation vs. Interpretation in Programming Languages
 - **Compilation**: Compilation is the process of translating high-level source code into machine code (binary code) that a computer's processor can execute directly. (C, C++, GO, Rust)
 - **Interpretation**: Interpretation involves translating and executing high-level source code line-by-line or statement-by-statement at runtime. (Python, Ruby, PHP, Javascript)
 
 ##### Just-In-Time (JIT) Compilation
-Many modern programming languages and engines, including JavaScript engines like V8, use a hybrid approach called Just-In-Time (JIT) compilation. JIT combines elements of both compilation and interpretation.
+Just-In-Time (JIT) compilation is a technique used by JavaScript engines to enhance performance by compiling frequently executed JavaScript code into native machine code at runtime. This approach allows for faster execution by leveraging both initial interpretation for quick start-up and ongoing optimization for code that is executed frequently, resulting in adaptive and efficient performance improvements.
+
 
 Further Reference: [JavaScript Under The Hood 5 - JavaScript Engine Overview](https://youtu.be/oc6faXVc54E?list=PL3ZPTlHmN263q0ZcI9qyqYfUKvaLqbGTt)
