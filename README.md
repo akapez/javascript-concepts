@@ -13,6 +13,7 @@ These concepts form the foundation of JavaScript programming and are essential f
 5. Fetch API (Callbacks, Promises, Thenable, and async/await)
 6. Memory Storage
 7. JavaScript Engine
+8. Javascript Array Methods
 
 ### JavaScript DOM Manipulation
 DOM manipulation allows developers to create interactive and dynamic web applications by modifying the structure, content, and style of web pages.
@@ -121,3 +122,49 @@ Just-In-Time (JIT) compilation is a technique used by JavaScript engines to enha
 
 
 Further Reference: [JavaScript Under The Hood 5 - JavaScript Engine Overview](https://youtu.be/oc6faXVc54E?list=PL3ZPTlHmN263q0ZcI9qyqYfUKvaLqbGTt) , [How V8 JavaScript engine works step by step with diagram](https://cabulous.medium.com/how-v8-javascript-engine-works-5393832d80a7) 
+
+### Javascript Array Methods
+
+JavaScript provides a rich set of methods for working with arrays. These methods make it easy to perform a variety of operations, such as adding and removing elements, finding elements, and iterating over arrays.
+
+##### Array Creation   
+- Array.from
+- Array.isArray
+- Array.of
+
+##### Adding/Removing Elements
+- push
+- pop
+- shift
+- unshift
+- splice
+
+##### Accessing Elements
+- at
+- concat
+- join
+- slice
+
+##### Searching and Sorting
+- indexOf
+- lastIndexOf
+- includes
+- find
+- findIndex
+- filter
+- sort
+- reverse
+
+##### Searching and Sorting
+- forEach
+- map
+- reduce
+- reduceRight
+- some
+- every
+
+##### Searching and Sorting
+- flat
+- flatMap
+- fill
+- copyWithin
