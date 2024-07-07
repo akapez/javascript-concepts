@@ -127,22 +127,22 @@ Further Reference: [JavaScript Under The Hood 5 - JavaScript Engine Overview](ht
 
 JavaScript provides a rich set of methods for working with arrays. These methods make it easy to perform a variety of operations, such as adding and removing elements, finding elements, and iterating over arrays.
 
-#### Array Creation   
+#### Array Creation 📦  
 - Array.from / Array.isArray / Array.of
 
-#### Adding/Removing Elements
+#### Adding/Removing Elements ➕➖
 - push / pop / shift / unshift / splice
 
-#### Accessing Elements
+#### Accessing Elements 🔍
 - at / concat / join / slice
 
-#### Searching and Sorting
+#### Searching and Sorting 🔭
 - indexOf / lastIndexOf / includes / find / findIndex / filter / sort / reverse
 
-#### Searching and Sorting
+#### Iteration Methods 🔄
 - forEach / map / reduce / reduceRight / some / every
 
-#### Searching and Sorting
+#### Other Useful Methods 🛠️
 - flat / flatMap / fill / copyWithin
 
 Further Reference: [Array methods](https://javascript.info/array-methods)
