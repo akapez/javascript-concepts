@@ -120,4 +120,4 @@ A JavaScript engine is a program or interpreter that executes JavaScript code. E
 Just-In-Time (JIT) compilation is a technique used by JavaScript engines to enhance performance by compiling frequently executed JavaScript code into native machine code at runtime. This approach allows for faster execution by leveraging both initial interpretation for quick start-up and ongoing optimization for code that is executed frequently, resulting in adaptive and efficient performance improvements.
 
 
-Further Reference: [JavaScript Under The Hood 5 - JavaScript Engine Overview](https://youtu.be/oc6faXVc54E?list=PL3ZPTlHmN263q0ZcI9qyqYfUKvaLqbGTt)
+Further Reference: [JavaScript Under The Hood 5 - JavaScript Engine Overview](https://youtu.be/oc6faXVc54E?list=PL3ZPTlHmN263q0ZcI9qyqYfUKvaLqbGTt) , [How V8 JavaScript engine works step by step with diagram](https://cabulous.medium.com/how-v8-javascript-engine-works-5393832d80a7) 
