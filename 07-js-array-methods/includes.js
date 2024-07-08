@@ -3,7 +3,7 @@
 const names = ['Sam', 'Mark', 'John', 'Steve'];
 
 const res = names.includes('Sam');
-console.log(res);
+console.log(res); // true
 
 //indexOf: arr.indexOf(item, from) – looks for item starting from index from, and returns the index where it was found, otherwise -1.
 

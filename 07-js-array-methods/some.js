@@ -8,4 +8,4 @@ function greaterThanFour(item) {
 
 const res = numbers.some(greaterThanFour);
 
-console.log(res);
+console.log(res); //true

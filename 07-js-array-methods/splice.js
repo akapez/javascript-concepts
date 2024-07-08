@@ -6,5 +6,5 @@ const numbers = [1, 2, 3, 4, 5];
 
 const deleted = numbers.splice(2, 3);
 
-console.log(numbers);
-console.log(deleted);
+console.log(numbers); // [1, 2]
+console.log(deleted); // [3, 4, 5]

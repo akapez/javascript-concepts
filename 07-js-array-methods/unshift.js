@@ -4,4 +4,4 @@ const numbers = [1, 2, 3, 4];
 
 numbers.unshift(0, -1);
 
-console.log(numbers);
+console.log(numbers); // [0, -1, 1, 2, 3, 4]

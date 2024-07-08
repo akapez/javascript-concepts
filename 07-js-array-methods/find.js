@@ -4,12 +4,12 @@ const people = [
     {
         id: 01,
         name: 'Sam',
-        age: 45,
+        age: 45
     },
     {
         id: 02,
         name: 'Mark',
-        age: 25,
+        age: 25
     },
     {
         id: 03,
@@ -24,4 +24,4 @@ function findPerson(per) {
 
 const res = people.find(findPerson);
 
-console.log(res);
+console.log(res); // { id: 02, name: 'Mark', age: 25}

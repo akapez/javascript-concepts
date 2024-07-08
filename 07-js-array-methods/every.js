@@ -8,7 +8,7 @@ function isPositive(item) {
 
 const res = numbers.every(isPositive);
 
-console.log(res);
+console.log(res); //true
 
 const persons = [
     {
@@ -27,4 +27,4 @@ const persons = [
 
 const perResults = persons.every(per => per.name !== undefined);
 
-console.log(perResults);
+console.log(perResults); //false

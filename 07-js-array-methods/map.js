@@ -9,7 +9,7 @@ function multiply(value, index, arr) {
 
 const numbersDouble = numbers.map(multiply);
 
-console.log(numbersDouble);
+console.log(numbersDouble); // [0, 2, 6, 12]
 
 const products = [
     {
@@ -37,8 +37,8 @@ const totalProductValues = products.map(item => ({
     total: item.price * item.count
 }));
 
-console.log(totalProductValues);
+console.log(totalProductValues); // [{"name":"Laptop","total":4000}, {"name":"Bag","total":120}, {"name":"Phone","total":1500}]
 
 //convert string into numbers
 const convert = str.map(Number);
-console.log(convert);
+console.log(convert); // [1, 2, 3, 4]

@@ -9,7 +9,7 @@ function isEven(value) {
 
 const even = numbers.filter(isEven);
 
-console.log(even);
+console.log(even); // [2, 4, 6]
 
 const people = [
     {
@@ -31,11 +31,11 @@ const people = [
 
 const adults = people.filter(person => person.age >= 18);
 
-console.log(adults);
+console.log(adults); // [{"id":1,"name":"Sam","age":45}, {"id":2,"name":"Mark","age":25}]
 
 //remove duplicate values
 const originalNumbers = mixNumbers.filter((value, index, arr) => {
     return arr.indexOf(value) === index;
 });
 
-console.log(originalNumbers);
+console.log(originalNumbers); // [1, 2, 3]

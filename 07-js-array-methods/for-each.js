@@ -10,7 +10,7 @@ const letters = ['a', 'b', 'a', 'c', 'e'];
 // numbers.forEach(consoleItem);
 
 numbers.forEach((item, index, arr) => {
-    console.log(arr);
+    console.log(arr); // 6:[1, 2, 3, 4, 5, 6]
 });
 
 let sum = 0;
@@ -20,7 +20,7 @@ numbers.forEach(item => {
     sum += item;
 });
 
-console.log(sum);
+console.log(sum); // 21
 
 letters.forEach(item => {
     if (count[item]) {
@@ -30,4 +30,4 @@ letters.forEach(item => {
     }
 });
 
-console.log(count);
+console.log(count); //{a: 2, b:1, c:1, e:1}

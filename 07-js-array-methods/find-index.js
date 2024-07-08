@@ -8,4 +8,4 @@ function findIndex(value) {
 
 const res = numbers.findIndex(findIndex);
 
-console.log(res);
+console.log(res); // 2

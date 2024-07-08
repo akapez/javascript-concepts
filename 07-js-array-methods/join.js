@@ -4,4 +4,4 @@ const countries = ['USA', 'Sri Lanka', 'Australia'];
 
 const res = countries.join(' - ');
 
-console.log(res);
+console.log(res); // USA - Sri Lanka - Australia

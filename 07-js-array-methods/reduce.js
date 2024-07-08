@@ -16,7 +16,7 @@ function sum(accumulator, value) {
 
 const total = numbers.reduce(sum);
 
-console.log(total);
+console.log(total); // 15
 
 const products = [
     {
@@ -41,7 +41,7 @@ const products = [
 
 const totalValueProducts = products.reduce((acc, item) => acc + item.price * item.count, 0);
 
-console.log(totalValueProducts);
+console.log(totalValueProducts); // 5620
 
 
 //flattening an array of arrays
@@ -51,4 +51,4 @@ const flattened = arrays.reduce((acc, value) => {
     return acc.concat(value);
 }, []);
 
-console.log(flattened);
+console.log(flattened); // [1, 2, 3, 4, 5, 6]

@@ -5,4 +5,4 @@ const str = 'Hello';
 const numb = 3;
 
 
-console.log(Array.isArray(str));
+console.log(Array.isArray(str)); // false
