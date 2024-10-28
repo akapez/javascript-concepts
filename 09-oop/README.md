@@ -5,6 +5,17 @@
 - An object is a collection of properties (data) and methods (functions).
 - Object can crete using object literals or constructor functions.
 
+```javascript
+const person = {
+  name: "Alice",
+  age: 30,
+  greet() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+};
+person.greet(); // Output: Hello, my name is Alice
+```
+
 #### Classes
 
 - Classes in JavaScript are templates for creating objects. They encapsulate data and functionality, organizing them in a reusable structure.
