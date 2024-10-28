@@ -14,3 +14,4 @@ These concepts form the foundation of JavaScript programming and are essential f
 6. [Thread & Call Stack](06-thread-call-stack/README.md)
 7. [Javascript Array Methods](07-js-array-methods/README.md)
 8. [JavaScript Engine](08-javascript-engine/README.md)
+9. [Object Oriented Programming](09-oop/README.md)
