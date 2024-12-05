@@ -16,3 +16,4 @@ These concepts form the foundation of JavaScript programming and are essential f
 8. [JavaScript Engine](08-javascript-engine/README.md)
 9. [Object Oriented Programming](09-oop/README.md)
 10. [String Methods](10-string-methods/README.md)
+11. [JavaScript Closure](11-js-closure/README.md)
