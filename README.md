@@ -18,3 +18,4 @@ These concepts form the foundation of JavaScript programming and are essential f
 10. [String Methods](10-string-methods/README.md)
 11. [JavaScript Closure](11-js-closure/README.md)
 12. [Functional Programming](12-functional-programming/README.md)
+13. [Scope](13-scope/README.md)
