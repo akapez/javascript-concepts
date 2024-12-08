@@ -2,11 +2,11 @@
 
 Destructuring assignment is a convenient way of extracting multiple values from arrays or objects and assigning them to variables in a single statement.
 
-## Destructuring Arrays
+#### Destructuring Arrays
 
 With array destructuring, we can unpack values from an array into distinct variables.
 
-#### Basic Syntax
+##### Basic Syntax
 
 ```javascript
 const array = [1, 2, 3, 4];
@@ -17,7 +17,7 @@ console.log(first); // 1
 console.log(second); // 2
 ```
 
-#### Skipping Values
+##### Skipping Values
 
 ```javascript
 const array = [1, 2, 3, 4];
@@ -28,7 +28,7 @@ console.log(first); // 1
 console.log(third); // 3
 ```
 
-#### Default Values
+##### Default Values
 
 ```javascript
 const array = [1, 2];
@@ -40,7 +40,7 @@ console.log(second); // 2
 console.log(third); // 3
 ```
 
-#### Rest Operator
+##### Rest Operator
 
 ```javascript
 const array = [1, 2, 3, 4];
@@ -51,11 +51,11 @@ console.log(first); // 1
 console.log(rest); // [2, 3, 4]
 ```
 
-## Destructuring Objects
+#### Destructuring Objects
 
 With object destructuring, we can unpack values from an object into distinct variables.
 
-#### Basic Syntax
+##### Basic Syntax
 
 ```javascript
 const person = {
@@ -70,7 +70,7 @@ console.log(name); // John
 console.log(age); // 30
 ```
 
-#### Renaming Variables
+##### Renaming Variables
 
 ```javascript
 const person = {
@@ -85,7 +85,7 @@ console.log(personName); // John
 console.log(personAge); // 30
 ```
 
-#### Default Values
+##### Default Values
 
 ```javascript
 const person = {
@@ -99,7 +99,7 @@ console.log(name); // John
 console.log(city); // Unknown
 ```
 
-### Combined Array and Object Destructuring
+#### Combined Array and Object Destructuring
 
 ```javascript
 const data = {
@@ -119,11 +119,11 @@ console.log(age); // 30
 console.log(city); // New York
 ```
 
-## Function Parameters
+#### Function Parameters
 
 Destructuring can also be used directly in function parameters to extract data from objects or arrays passed to the function.
 
-#### Array Destructuring in Function Parameters
+##### Array Destructuring in Function Parameters
 
 ```javascript
 function sum([a, b]) {
@@ -133,7 +133,7 @@ function sum([a, b]) {
 console.log(sum([1, 2])); // 3
 ```
 
-#### Object Destructuring in Function Parameters
+##### Object Destructuring in Function Parameters
 
 ```javascript
 function greet({ name, age }) {
