@@ -20,3 +20,4 @@ These concepts form the foundation of JavaScript programming and are essential f
 12. [Functional Programming](12-functional-programming/README.md)
 13. [Scope](13-scope/README.md)
 14. [Debounce & Throttling](14-debounce-throttle/README.md)
+15. [Destructuring Assignment](15-destructuring/README.md)
