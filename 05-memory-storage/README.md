@@ -25,7 +25,7 @@ JavaScript, like many programming languages, uses two main memory structures to 
 | Management	    | Automatically managed by JavaScript engine  | Managed by JavaScript engine with garbage collection|
 | Allocation Type	| Static memory allocation                    | Dynamic memory allocation                           |
 
-![Stack and Heap](https://raw.githubusercontent.com/akapez/javascript-concepts/refs/heads/main/05-memory-storage/memory-storage.png)
+![Stack and Heap](https://raw.githubusercontent.com/akapez/javascript-concepts/refs/heads/main/05-memory-storage/memory-storage-fixed.png)
 
 The diagram illustrates how primitive values (like numbers and strings) and reference values (like objects) are handled in JavaScript. Primitive values are copied directly when assigned to variables. Reference values, on the other hand, store a memory address that points to the actual object in the heap. When you assign a reference value, you copy the memory address, not the object itself.
 
